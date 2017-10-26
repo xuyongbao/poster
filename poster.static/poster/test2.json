@@ -1,0 +1,41 @@
+{
+  "base": {
+    "background": "images/big_bg.jpg"
+  },
+  "logo": {
+    "width": 20,
+    "height": 20,
+    "axis_y": "150.00",
+    "axis_x": "150.00"
+  },
+  "title": {
+    "width": 100,
+    "height": 30,
+    "axis_x": "0.00",
+    "axis_y": "0.00",
+    "content": "hi",
+    "font_size": "12",
+    "font_color": "344"
+  },
+  "element1": {
+    "type": "text",
+    "axis_x": "0.00",
+    "axis_y": "20.00",
+    "width": 100,
+    "height": 100,
+    "content": null,
+    "font_size": null,
+    "font_color": null
+
+  },
+  "element2": {
+    "type": "image",
+    "axis_x": "10.00",
+    "axis_y": "200.00",
+    "width": 50,
+    "height": 50,
+    "pic": "images/elemt2.jpg",
+    "border_width": null,
+    "border_color": null
+  }
+}

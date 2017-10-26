@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewPort" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>海报生成器</title>
+    <link href="css/reset.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/fileUpload.css"/>
+    <link href="css/demo.css" rel="stylesheet" />
+</head>
+<body>
+<div id="title" class="txt-center drag_pos" data-num="1">
+    <span class="title_txt">从容，是一朵闲适的云</span>
+    <div class="edit_box"></div>
+    <span class="rotate_el" id="rotate_el_n1"></span>
+</div>
+<div class="drag_pos" id="logo">
+    <img src="images/logo.png" />
+    <div class="edit_box"></div>
+    <span class="rotate_el" id="rotate_el_n2"></span>
+</div>
+<!--<div class="drag_pos" id="div1">
+    <div class="edit_box"></div>
+    <span class="rotate_el" id="rotate_el" ></span>
+    <p class="txt">如果有时间，哪怕一丁点儿，我希望所有的安排，都能够提前准备好，这样，可以让自己更从容地面对接下来的事情，保持内心淡定与恬适，去做一个喜欢的自己。</p>
+</div>-->
+
+<div class="drag_pos" id="element_img" >
+    <div class="edit_box"></div>
+    <span class="rotate_el" id="rotate_el" ></span>
+    <img src="images/elemt1.jpg" width="100" height="100" style="width:100%;height:100%;" />
+</div>
+
+<div class="drag_pos" id="scaling_el">
+    <div class="edit_box"></div>
+    <span class="rotate_el" id="scaling_ele"></span>
+    <p class="txt" style="color: #fff;">在熙熙人潮中，融入世俗生活，是一种智慧，而跳出喧闹，以局外人去看这纷扰的世界，也许更多一份禅意与冷静。</p>
+</div>
+<div class="fix_btn">
+    <a href="javascript:void(0);" class="bg_choose_btn">背景选择</a>
+    <a href="javascript:void(0);" class="randomBg_btn">随机替换</a>
+    <a href="javascript:void(0);">一键生成</a>
+</div>
+
+<!--标题操作框-->
+<div class="modify-options">
+    <div class="modify-options-box txt-center">
+        <ul class="clr">
+            <li>
+                <span>字体颜色：<i>#ffffff</i></span><br>
+                <input type="color" value="#ffffff;" />
+            </li>
+            <li>
+                <span>字体大小：<i>0</i></span><br>
+                <div class="fontSize">
+                    <span>12px</span>
+                    <span>14px</span>
+                    <span>16px</span>
+                    <span class="active">18px</span>
+                    <span>20px</span>
+                </div>
+            </li>
+            <li>
+                <span>边框宽度：<i>0</i></span><br>
+                <button id="minus1">-</button>
+                <button id="minus2">+</button>
+            </li>
+            <li>
+                <span>标题内容：<i>0</i></span><br>
+                <input value="从容，是一朵闲适的云" class="content_inp" />
+            </li>
+        </ul>
+        <button class="sure_btn">确定</button>
+    </div>
+</div>
+
+<!--背景操作框-->
+<div class="mask Bg_choose BG_CHOOSE" >
+    <ul class="mask_main">
+        <li>
+            <p class="txt">系统背景选择：</p>
+            <div class="default_bg">
+                <div class="default1 default_bg_div"><span>√</span></div>
+                <div class="default2 default_bg_div"><span>√</span></div>
+                <div class="default3 default_bg_div"><span>√</span></div>
+                <div class="default4 default_bg_div"><span>√</span></div>
+                <div class="default1 default_bg_div"><span>√</span></div>
+                <div class="default2 default_bg_div"><span>√</span></div>
+                <div class="default3 default_bg_div"><span>√</span></div>
+                <div class="default4 default_bg_div"><span>√</span></div>
+            </div>
+        </li>
+        <li>
+            <div class="txt" style="position: relative;">上传背景：
+                <div class="form-group" id="cameraInput"></div>
+                <button class="upload_btn_rel">+上传</button>
+            </div>
+        </li>
+        <!--<li>
+            <span>边框宽度：<i>0px</i></span><br>
+            <button id="minus1_1">-</button>
+            <button id="minus2_1">+</button>
+        </li>-->
+        <li class="close">
+            <span>×</span>
+        </li>
+        <li style="text-align:center;">
+            <button class="sure_btn">确定</button>
+        </li>
+    </ul>
+</div>
+<!--文字块操作框-->
+<div class="mask Bg_choose WZ_CHOOSE" >
+    <ul class="mask_main">
+        <li>
+            <p class="txt">系统背景选择：</p>
+            <div class="default_bg">
+                <div class="default1 default_bg_div"><span>√</span></div>
+                <div class="default2 default_bg_div"><span>√</span></div>
+                <div class="default3 default_bg_div"><span>√</span></div>
+                <div class="default4 default_bg_div"><span>√</span></div>
+                <div class="default1 default_bg_div"><span>√</span></div>
+                <div class="default2 default_bg_div"><span>√</span></div>
+                <div class="default3 default_bg_div"><span>√</span></div>
+                <div class="default4 default_bg_div"><span>√</span></div>
+            </div>
+        </li>
+        <li>
+            <div class="txt" style="position: relative;">上传背景：
+                <div class="form-group" id="cameraInput2"></div>
+                <button class="upload_btn_rel" style="position: absolute;top:20px;">+上传</button>
+            </div>
+        </li>
+        <li>
+            <div class="WZ_border">
+                <span>边框宽度：<i>0</i></span><br>
+                <button id="minus1_1" value="-">-</button>
+                <button id="minus2_1" value="+">+</button>
+            </div>   
+            <div class="WZ_color">
+                <span>边框颜色</span><br>
+                <p><input type="color" value="#ffffff" /></p>
+            </div>   
+        </li>
+        <li class="close">
+            <span>×</span>
+        </li>
+        <li style="text-align:center;">
+            <button class="sure_btn">确定</button>
+        </li>
+    </ul>
+    
+</div>
+<div class="mask Bg_choose WZ_CHOOSE2" >
+    <ul class="mask_main">
+        <li>
+            <p class="txt">系统背景选择：</p>
+            <div class="default_bg">
+                <div class="default1 default_bg_div"><span>√</span></div>
+                <div class="default2 default_bg_div"><span>√</span></div>
+                <div class="default3 default_bg_div"><span>√</span></div>
+                <div class="default4 default_bg_div"><span>√</span></div>
+                <div class="default1 default_bg_div"><span>√</span></div>
+                <div class="default2 default_bg_div"><span>√</span></div>
+                <div class="default3 default_bg_div"><span>√</span></div>
+                <div class="default4 default_bg_div"><span>√</span></div>
+            </div>
+        </li>
+        <li>
+            <div class="txt" style="position: relative;">上传背景：
+                <div class="form-group" id="cameraInput3"></div>
+                <button class="upload_btn_rel" style="position: absolute;top:20px;">+上传</button>
+            </div>
+        </li>
+        <li>
+            <div class="WZ_border">
+                <span>边框宽度：<i>0</i></span><br>
+                <button id="minus1_1" value="-">-</button>
+                <button id="minus2_1" value="+">+</button>
+            </div>   
+            <div class="WZ_color">
+                <span>边框颜色</span><br>
+                <p><input type="color" value="#ffffff" /></p>
+            </div>   
+        </li>
+        <li class="close">
+            <span>×</span>
+        </li>
+        <li style="text-align:center;">
+            <button class="sure_btn">确定</button>
+        </li>
+    </ul>
+</div>
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery.ui.widget.js"></script>
+<script src="js/jquery.fileupload.js"></script>
+<script src="js/upload_main_js.js"></script>
+<script src="js/demo.js"></script>
+</html> 

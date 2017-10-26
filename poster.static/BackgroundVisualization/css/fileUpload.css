@@ -1,0 +1,75 @@
+/*2016-12-13上传图片*/
+.upload_img_box{
+    position: relative;
+    width:45%;
+    height:100px;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 5%;
+}
+.upload_img_box img{
+    width:100%;
+    height:100%;
+}
+.upload_btn{
+    width:27%;
+    height:25px;
+    cursor: pointer;
+}
+.upload_care{
+    color: red;
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+#preview-up-img{
+    position: absolute;
+    width:120%;
+    left:-23%;
+}
+.upload_del{
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    border: none;
+    border-radius: 16px;
+    background: url("../images/error_icon.png") no-repeat;
+    background-size: 100% 100%;
+}
+.upload_img_box .checked{
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    background: red;
+    color:#333;
+    font-size:18px;
+    line-height:20px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+    display: none;
+}
+.upload_img_box .checked.on {
+    display: block;
+}
+.hidden{
+    display: none!important;
+}
+.form-group{
+    position: absolute;
+    top: 0;
+    left:23%;
+    width:74%;
+    height: 40px;
+}
+#cameraInput2 #preview-up-img,#cameraInput3 #preview-up-img{
+    left:0;
+    top:54px;
+    width:100%;
+}

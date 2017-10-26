@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" >
+    <!-- content="width=device-width, initial-scale=1.0" -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="./css/reset.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/fileUpload.css">
+    <link href="./css/index.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="contain clr">
+        <div class="contain_left fl">
+            
+            <ul class="contain_ul">
+                <!-- 标题编写 -->
+                <li class="title_edit">
+                    <p class="title_name"><input type="checkbox" name="title" value="title" checked="checked"  class="title_choise"/> 标题编辑</p>
+                    <textarea name="" id="" class="title_content">从容，是一朵闲适的云</textarea>
+                    <div class="clr">
+                        <div class="add_plus fl">
+                            <span>字体大小：<i>12</i></span><br/>
+                            <input type="text" value="12"/>
+                        </div>
+                        <div class="chang_color fl">
+                            <span>字体颜色：<i>#ffffff</i></span><br/>
+                            <input type="color" class="color_change" value="#ffffff" />
+                        </div>
+                    </div>
+                </li>
+                <li class="bg_edit">
+                    <p class="bg_name"><input type="checkbox" name="bg" value="bg" checked="checked"  class="bg_choise hidden"/>背景图片选择</p>
+                    <div class="choise">浏览</div>
+                </li>
+                <li class="img1_edit">
+                    <p class="img1_name"><input type="checkbox" name="img1" value="img1" checked="checked"  class="img1_choise"/>元素一图片选择</p>
+                    <div class="choise">浏览</div>
+                </li>
+                <li class="img2_edit">
+                    <p class="img2_name"><input type="checkbox" name="img2" value="img2" checked="checked"  class="img2_choise"/>元素二图片选择</p>
+                    <div class="choise">浏览</div>
+                </li>
+            </ul>
+
+            
+            <div class="popup hidden bg_popup">
+                <ul class="pop_list">
+                    <li class="system">
+                        <p>系统图片选择:</p>
+                        <ul class="pop_child clr">
+                            <li class="list_img fl on">
+                                <div class="list_container">
+                                    <img src="./images/315_bg.jpg" alt="315" > 
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li class="list_img fl">
+                                <div class="list_container">
+                                    <img src="./images/0501_bg.jpg" alt="315" > 
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li class="list_img fl">
+                                <div class="list_container">
+                                    <img src="./images/505_bg.jpg" alt="315" > 
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li class="list_img fl">
+                                <div class="list_container">
+                                    <img src="./images/0815_bg.jpg" alt="315" > 
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li class="list_img fl">
+                                <div class="list_container">
+                                    <img src="./images/910_bg.jpg" alt="315" > 
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li class="list_img fl">
+                                <div class="list_container">
+                                    <img src="./images/1001_bg.jpg" alt="315" > 
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li class="list_img fl">
+                                <div class="list_container">
+                                    <img src="./images/thanks_bg.jpg" alt="315" > 
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li class="list_img fl">
+                                <div class="list_container">
+                                    <img src="./images/theme_1_bg.jpg" alt="315" > 
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li class="list_img fl">
+                                <div class="list_container">
+                                    <img src="./images/give_day_bg.jpg" alt="315" > 
+                                    <span></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="upload_img">
+                        <!-- 图片上传 -->
+                        <div class="txt" style="position: relative;">
+                            <span>上传背景：</span>
+                            <div class="form-group" id="cameraInput"></div>
+                            <button class="upload_btn_rel">+上传</button>
+                        </div>
+                    </li>
+                    <li class="img_size clr hidden">
+                        <p>图片大小设定:</p>
+                        <div class="img_w fl">
+                            图片宽度：<input type="text" value = "100"/>
+                        </div>
+                        <div class="img_h fl">
+                            图片高度：<input type="text" value = "100"/>
+                        </div>
+                    </li>
+                    <li class="sure">
+                        <div class="sure_button">确定</div>
+                    </li>
+                </ul>
+                <div class="popup_close"><img src="./images/close.png" alt=""></div>
+            </div>
+
+
+            <div class="popup hidden img1_popup">
+                <ul class="pop_list">
+                    <li class="system">
+                        <p>系统图片选择:</p>
+                        <ul class="pop_child clr">
+                            <li class="list_img fl on">
+                                <div class="list_container">
+                                    <img src="./images/315_el1.png" alt="315" > 
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li class="list_img fl">
+                                <div class="list_container">
+                                    <img src="./images/5_1_el1.png" alt="315" > 
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li class="list_img fl">
+                                <div class="list_container">
+                                    <img src="./images/505_el1.png" alt="315" > 
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li class="list_img fl">
+                                <div class="list_container">
+                                    <img src="./images/0815_el1.png" alt="315" > 
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li class="list_img fl">
+                                <div class="list_container">
+                                    <img src="./images/910_el1.png" alt="315" > 
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li class="list_img fl">
+                                <div class="list_container">
+                                    <img src="./images/1001_el1.png" alt="315" > 
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li class="list_img fl">
+                                <div class="list_container">
+                                    <img src="./images/thanks_el1.png" alt="315" > 
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li class="list_img fl">
+                                <div class="list_container">
+                                    <img src="./images/theme_1_el1.png" alt="315" > 
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li class="list_img fl">
+                                <div class="list_container">
+                                    <img src="./images/give_day_el1.png" alt="315" > 
+                                    <span></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="upload_img">
+                        <!-- 图片上传 -->
+                        <div class="txt" style="position: relative;">
+                            <span>上传背景：</span>
+                            <div class="form-group" id="cameraInput2"></div>
+                            <button class="upload_btn_rel">+上传</button>
+                        </div>
+                    </li>
+                    <li class="img_size clr ">
+                        <p>图片大小设定:</p>
+                        <div class="img_w fl">
+                            图片宽度：<input type="text" value = "100"/>
+                        </div>
+                        <div class="img_h fl">
+                            图片高度：<input type="text" value = "100"/>
+                        </div>
+                    </li>
+                    <li class="sure">
+                        <div class="sure_button">确定</div>
+                    </li>
+                </ul>
+                <div class="popup_close"><img src="./images/close.png" alt=""></div>
+            </div>
+
+
+            <div class="popup hidden img2_popup">
+                <ul class="pop_list">
+                    <li class="system">
+                        <p>系统图片选择:</p>
+                        <ul class="pop_child clr">
+                            <li class="list_img fl on">
+                                <div class="list_container">
+                                    <img src="./images/315_el2.png" alt="315" > 
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li class="list_img fl">
+                                <div class="list_container">
+                                    <img src="./images/5_1_el2.png" alt="315" > 
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li class="list_img fl">
+                                <div class="list_container">
+                                    <img src="./images/505_el2.png" alt="315" > 
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li class="list_img fl">
+                                <div class="list_container">
+                                    <img src="./images/0815_el2.png" alt="315" > 
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li class="list_img fl">
+                                <div class="list_container">
+                                    <img src="./images/910_el2.png" alt="315" > 
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li class="list_img fl">
+                                <div class="list_container">
+                                    <img src="./images/1001_el2.png" alt="315" > 
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li class="list_img fl">
+                                <div class="list_container">
+                                    <img src="./images/thanks_el2.png" alt="315" > 
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li class="list_img fl">
+                                <div class="list_container">
+                                    <img src="./images/theme_1_el2.png" alt="315" > 
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li class="list_img fl">
+                                <div class="list_container">
+                                    <img src="./images/give_day_el2.png" alt="315" > 
+                                    <span></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="upload_img">
+                        <!-- 图片上传 -->
+                        <div class="txt" style="position: relative;">
+                            <span>上传背景：</span>
+                            <div class="form-group" id="cameraInput3"></div>
+                            <button class="upload_btn_rel">+上传</button>
+                        </div>
+                    </li>
+                    <li class="img_size clr ">
+                        <p>图片大小设定:</p>
+                        <div class="img_w fl">
+                            图片宽度：<input type="text" value = "100"/>
+                        </div>
+                        <div class="img_h fl">
+                            图片高度：<input type="text" value = "100"/>
+                        </div>
+                    </li>
+                    <li class="sure">
+                        <div class="sure_button">确定</div>
+                    </li>
+                </ul>
+                <div class="popup_close"><img src="./images/close.png" alt=""></div>
+            </div>
+
+        </div>
+        <div class="contain_middle fl">
+            <span class="preview">效果预览</span>
+            <div class="ipone6">
+                <div class="title_bg">
+                    <img src="./images/title.png" alt="" srcset="">
+                    <div class="title_fix">圣诞节</div>
+                </div>
+                <div class="ipone_contain drag-box">
+                    <!-- 标题 -->
+                    <pre class="title drag" >从容，是一朵闲适的云</pre>
+                    <!-- logo -->
+                    <div class="logo drag">
+                        <div class="drag_border"></div>
+                        <img src="./images/logo.png" alt="logo" />     
+                    </div>
+                    <!-- 第一个图片元素 -->
+                    <div class="first_img drag">
+                        <div class="drag_border"></div>
+                        <img src="./images/315_el1.png" alt="第一个" />
+                        <div class="img_border_show"></div>
+                    </div>
+                    
+                    <!-- 第二个图片元素 -->
+                    <div class="last_img drag">
+                        <div class="drag_border"></div>
+                        <img src="./images/315_el2.png" alt="第二个"/>
+                        <div class="img_border_show"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contain_right fl">
+            <h1 class="options_title">配置选项</h1>
+            <ul class="options">
+                <li class="options_list logo_options">
+                    <p class="logo_name"><input type="checkbox" name="logo" value="logo" checked="checked"  class="logo_choise "/>&nbsp;&nbsp;logo是否需要</p>       
+                </li>
+                <li class="options_list weather">
+                    <p class="weather_name"><input type="checkbox" name="weather" value="weather" checked="checked"  class="weather_choise "/>&nbsp;&nbsp;天气是否需要</p>       
+                </li>
+                <li class="options_list QR_code">
+                    <p class="QR_code_name"><input type="checkbox" name="QR_code" value="QR_code" checked="checked"  class="QR_code_choise "/>&nbsp;&nbsp;民生二维码是否需要</p>       
+                </li>
+                <li class="options_list time">
+                    <p class="time_name"><input type="checkbox" name="time" value="time" checked="checked"  class="time_choise "/>&nbsp;&nbsp;当前时间是否需要</p>       
+                </li>
+                <li class="options_list staff">
+                    <h2>员工信息展示选项</h2>
+                    <p class="job_number_name"><input type="checkbox" name="job_number" value="job_number" checked="checked"  class="job_number_choise "/>&nbsp;&nbsp;工号是否需要</p>
+                    <p class="phone_number_name"><input type="checkbox" name="phone_number" value="phone_number" checked="checked"  class="phone_number_choise "/>&nbsp;&nbsp;手机号是否需要</p>
+                    <p class="head_portrait_name"><input type="checkbox" name="head_portrait" value="head_portrait" checked="checked"  class="head_portrait_choise "/>&nbsp;&nbsp;头像是否需要</p>
+                    <p class="nick_name"><input type="checkbox" name="nickname" value="nickname" checked="checked"  class="nickname_choise "/>&nbsp;&nbsp;昵称是否需要</p>
+                    <p class="my_name"><input type="checkbox" name="my" value="my" checked="checked"  class="my_choise "/>&nbsp;&nbsp;名称是否需要</p>
+                    <p class="qr_name"><input type="checkbox" name="qr" value="qr" checked="checked"  class="qr_choise "/>&nbsp;&nbsp;二维码是否需要</p>       
+                </li>
+                <li class="options_list count">
+                    <textarea name="" id="" class="excitation_content"  placeholder="请输入激励口号文案"></textarea>
+                    <div>
+                        <input type="radio" name="day" id="plus" checked />
+                        <label for="plus">天数递加</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="day" id="reduce" />    
+                        <label for="reduce">天数递减</label>  
+                    </div> 
+                    <div class="choise_date">
+                        <span>初始日期:&nbsp; &nbsp; &nbsp; </span><input type="date" value="2017-10-06">
+                    </div> 
+                    <div style="margin-top:20px;">
+                        <input type="checkbox" name="preservation" id="preservation" checked/>    
+                        <label for="preservation">保存天数</label>  
+                    </div> 
+                    <textarea name="" id="" class="preservation_content"  placeholder="请输入保存天数激励口号文案"></textarea>   
+
+                        
+                </li>
+                <li>
+                    <div class="send_data">
+                        一键保存模板
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/drag.js"></script>
+    <script src="./js/jquery.ui.widget.js"></script>
+    <script src="./js/jquery.fileupload.js"></script>
+    <script src="./js/upload_main_js.js"></script>
+    <script src="./js/index.js?v=5.0"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+### theme/get?id=25
+
+```
+{
+  "bg" : {
+    "style" : "",
+    "status" : 1,
+    "element_id" : 78,
+    "updated_at" : "2017-03-22 09:13:55",
+    "axis_x" : "0.00",
+    "use_count" : 0,
+    "origin" : 1,
+    "source_url" : "\/upload\/images\/ec9929e8cfb752b4664becbfcb72b8f1.jpg",
+    "name" : "",
+    "type" : 2,
+    "source_id" : 36,
+    "id" : 78,
+    "show" : 1,
+    "border" : "",
+    "height" : 1080,
+    "width" : 640,
+    "node" : 1,
+    "theme_id" : 25,
+    "axis_y" : "0.00",
+    "created_at" : "2017-03-22 09:13:55"
+  },
+  "title" : {
+    "status" : 1,
+    "element_id" : 77,
+    "updated_at" : "2017-03-22 12:55:43",
+    "axis_x" : "100.00",
+    "use_count" : 0,
+    "origin" : 1,
+    "name" : "标题",
+    "type" : 1,
+    "source_id" : 35,
+    "id" : 77,
+    "show" : 1,
+    "font_color" : "255,255,255",
+    "height" : 60,
+    "width" : 400,
+    "node" : 0,
+    "font_size" : "20",
+    "axis_y" : "90.00",
+    "created_at" : "2017-03-22 09:13:54",
+    "theme_id" : 25,
+    "content" : "变迁的是岁月\r\n不变的是童心"
+  },
+  "base" : {
+    "logo_axis_y" : "10.00",
+    "logo_axis_x" : "10.00",
+    "logo_width" : 100,
+    "browse_count" : 0,
+    "status" : 1,
+    "preview" : "\/images\/theme1.jpg",
+    "is_show_mobile" : 1,
+    "element2_id" : 80,
+    "is_show_time" : 1,
+    "updated_at" : "2017-09-28 13:05:04",
+    "is_show_headimg" : 1,
+    "is_show_nickname" : 1,
+    "is_show_qr" : 1,
+    "basis_day" : 1,
+    "use_count" : 0,
+    "name" : "儿童节",
+    "logo_height" : 40,
+    "type" : "节日",
+    "title_id" : 77,
+    "is_show_day" : 1,
+    "id" : 25,
+    "is_show_weather" : 1,
+    "element1_id" : 79,
+    "created_at" : "2017-03-22 09:13:54",
+    "order" : 10,
+    "logo_show" : 1,
+    "category_id" : 5,
+    "day_type" : 1,
+    "is_show_no" : 1
+  },
+  "categories" : "[{\"id\":5,\"name\":\"\\u8282\\u65e5\",\"status\":1,\"order\":9,\"created_at\":\"2017-09-28 13:04:48\",\"updated_at\":\"2017-09-28 13:05:04\"},{\"id\":6,\"name\":\"\\u4ea7\\u54c1\",\"status\":1,\"order\":2,\"created_at\":\"2017-09-28 13:04:48\",\"updated_at\":\"2017-09-28 13:05:04\"},{\"id\":1,\"name\":\"\\u5475\\u5475\",\"status\":1,\"order\":0,\"created_at\":null,\"updated_at\":null}]",
+  "elements" : [
+    {
+      "style" : "",
+      "status" : 1,
+      "element_id" : 79,
+      "updated_at" : "2017-06-01 10:40:56",
+      "axis_x" : "0.00",
+      "use_count" : 0,
+      "origin" : 1,
+      "source_url" : "\/upload\/images\/cd08e362cdf11e46f9d3098281226fb5.png",
+      "name" : "",
+      "type" : 2,
+      "source_id" : 37,
+      "id" : 79,
+      "show" : 1,
+      "border" : "",
+      "height" : 520,
+      "width" : 350,
+      "node" : 2,
+      "theme_id" : 25,
+      "axis_y" : "450.00",
+      "created_at" : "2017-03-22 09:13:55"
+    },
+    {
+      "style" : "",
+      "status" : 1,
+      "element_id" : 80,
+      "updated_at" : "2017-03-22 12:55:43",
+      "axis_x" : "300.00",
+      "use_count" : 0,
+      "origin" : 1,
+      "source_url" : "\/upload\/images\/1a1b387697f2c05a14e6c92859a1464f.png",
+      "name" : "",
+      "type" : 2,
+      "source_id" : 38,
+      "id" : 80,
+      "show" : 1,
+      "border" : "",
+      "height" : 520,
+      "width" : 330,
+      "node" : 3,
+      "theme_id" : 25,
+      "axis_y" : "450.00",
+      "created_at" : "2017-03-22 09:13:55"
+    }
+  ]
+}
+```
+
+
+
+### /theme/get_element?theme_id=25&node=2
+node 1:背景图、2：元素一、3：元素二
+
+```
+{
+  "total" : 1,
+  "data" : [
+    {
+      "style" : "",
+      "status" : 1,
+      "element_id" : 79,
+      "updated_at" : "2017-04-14 06:38:42",
+      "axis_x" : "0.00",
+      "use_count" : 0,
+      "origin" : 1,
+      "source_url" : "\/upload\/images\/cd08e362cdf11e46f9d3098281226fb5.png",
+      "name" : "",
+      "type" : 2,
+      "source_id" : 37,
+      "id" : 79,
+      "show" : 1,
+      "height" : 520,
+      "border" : "",
+      "width" : 350,
+      "node" : 2,
+      "theme_id" : 25,
+      "axis_y" : "450.00",
+      "created_at" : "2017-03-22 09:13:55"
+    }
+  ],
+  "pagesize" : 10,
+  "page" : 1
+}
+```
+
+
+### /theme/save
+
+theme_id:27
+name:圣诞节
+category:5     分类
+order:3        排序
+status:1       1：上架；2：下架
+is_show_time:1  显示时间
+is_show_weather:1  显示天气
+is_show_no:1   显示工号
+is_show_mobile:1  显示手机号
+is_show_headimg:1  显示头像
+is_show_nickname:1  显示昵称
+is_show_qr:1  显示二维码
+is_show_day:1  显示天数
+day_type:1     天数类型 1 增 2 减
+basis_day:1    基础天数
+title_content:阳光为你灿烂雪花因你浪漫
+title_width:750
+title_height:300
+title_axis_x:400.00
+title_axis_y:400.00
+title_fontsize:20
+title_fontcolor:255,255,255
+title_show:1
+background:/images/1225_bg.jpg
+bg_width:1512
+bg_height:2552
+logo_width:241
+logo_height:96
+logo_axis_x:34.00
+logo_axis_y:34.00
+upimg[0]:/images/1225_el1.png
+el_type[0]:2
+el_image_width[0]:1302
+el_image_height[0]:361
+el_image_axis_x[0]:102.00
+el_image_axis_y[0]:128.00
+el_style[0]:
+el_content[0]:
+el_text_width[0]:1302
+el_text_height[0]:361
+el_text_axis_x[0]:102.00
+el_text_axis_y[0]:128.00
+el_fontsize[0]:
+el_fontcolor[0]:#000000
+el_show[0]:1
+el_type[1]:2
+upimg[1]:/images/1225_el2.png
+el_image_width[1]:1406
+el_image_height[1]:1431
+el_image_axis_x[1]:46.00
+el_image_axis_y[1]:504.00
+el_style[1]:
+el_content[1]:
+el_text_width[1]:1406
+el_text_height[1]:1431
+el_text_axis_x[1]:46.00
+el_text_axis_y[1]:504.00
+el_fontsize[1]:
+el_fontcolor[1]:#000000
+el_show[1]:1

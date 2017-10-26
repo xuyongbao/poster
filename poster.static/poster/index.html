@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewPort" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>海报生成器</title>
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/demo.css" rel="stylesheet" />
+</head>
+<body>
+<div class="i_box">
+	<ul class="clr i_b_list">
+		<li>
+			<a href="javascript:void(0);" class="link_href">
+				<img src="images/theme1.jpg" class="i_l_img" />
+				<span class="t_l_txt">奥斯卡--尴尬了</span>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:void(0);" class="link_href">
+				<img src="images/i_img2.jpg" class="i_l_img" />
+				<span class="t_l_txt">龙抬头--理发</span>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:void(0);" class="link_href">
+				<img src="images/i_img3.jpg" class="i_l_img" />
+				<span class="t_l_txt">龙抬头--旺到头</span>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:void(0);" class="link_href">
+				<img src="images/i_img4.jpg" class="i_l_img" />
+				<span class="t_l_txt">奥斯卡--尴尬了</span>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:void(0);" class="link_href">
+				<img src="images/logo.png" class="i_l_img" />
+				<span class="t_l_txt">龙抬头--旺到头</span>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:void(0);" class="link_href">
+				<img src="images/i_img5.jpg" class="i_l_img" />
+				<span class="t_l_txt">龙抬头--理发</span>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:void(0);" class="link_href">
+				<img src="images/i_img6.jpg" class="i_l_img" />
+				<span class="t_l_txt">龙抬头--旺到头</span>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:void(0);" class="link_href">
+				<img src="images/i_img6.jpg" class="i_l_img" />
+				<span class="t_l_txt">龙抬头--旺到头</span>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:void(0);" class="link_href">
+				<img src="images/i_img6.jpg" class="i_l_img" />
+				<span class="t_l_txt">龙抬头--旺到头</span>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:void(0);" class="link_href">
+				<img src="images/i_img6.jpg" class="i_l_img" />
+				<span class="t_l_txt">龙抬头--旺到头</span>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:void(0);" class="link_href">
+				<img src="images/i_img6.jpg" class="i_l_img" />
+				<span class="t_l_txt">龙抬头--旺到头</span>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:void(0);" class="link_href">
+				<img src="images/i_img6.jpg" class="i_l_img" />
+				<span class="t_l_txt">龙抬头--旺到头</span>
+			</a>
+		</li>
+	</ul>
+</div>
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script>
+	$(function(){		
+		/*高/宽*/
+		var i_ratio = 27/16;
+		$('.t_l_txt').css('width',parseFloat($(document).width())*0.3+'px');
+		$('.i_l_img').css({
+			width: $('.link_href').width(),
+			height: parseFloat($('.link_href').width()*i_ratio)+'px'
+		});
+	})
+</script>
+</html>
