@@ -686,7 +686,7 @@ var App = {
     upData:function(){
         var self = this;
         $.get(
-            "../data/data1.json",
+            "data1.json",
             function(data){
                 self.render(data);
             }        
