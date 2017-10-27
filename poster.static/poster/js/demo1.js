@@ -10,6 +10,8 @@ var titlText = document.getElementById("title_text");
 var titleResult = document.getElementById("title_result_txt");
 // var btn = document.getElementById("btn");
 
+var alertReady = true;
+
 window.onload = function(){
     //阻止微信下拉
     function preventTouch() {
@@ -159,6 +161,8 @@ window.onload = function(){
 
     //文字块修改背景和边框
     $('#element_img').on("click",function(){
+
+        if(!alertReady) return ;
 
         CHANGEWZ = null;
         WZ = $('#element_img');
@@ -344,6 +348,7 @@ window.onload = function(){
 
 
     $('#element_img2').on("click",function(){
+        if(!alertReady) return ;
         CHANGEWZ = null;
         WZ = $('#element_img2');
         var obj = $('.WZ_CHOOSE2');
@@ -926,11 +931,15 @@ function scaleORrotate(oDiv1,oDiv2){
             //禁止了旋转
             //oDiv1.setAttribute('d2_rotate',Math.round(d1*1000)/1000);
             console.log(oDiv1.getAttribute('d2_num'));
+            alertReady = false;
         }
 
         function fnEnd(){
             oDiv2.removeEventListener("touchmove",fnMove,false);
             oDiv2.removeEventListener("touchend",fnEnd,false);
+            setTimeout(function(){
+                alertReady = true;
+            },1000)
         }
         oDiv2.addEventListener("touchmove",fnMove,false);
         oDiv2.addEventListener("touchend",fnEnd,false);
@@ -963,17 +972,14 @@ function fn1(obj1){
 
                     $(obj).find(".default_bg_div").each(function(){
                         if($(this).find("img").attr("src") == INITBG){
-                            //$(this).addClass("on");
                             bgBl = true;
                             return false;
                         }
                     })
 
                     //图片选择
-                    //var INITBG = $("body").attr("data-src");
                     $(obj).find(".upload_img_box img").each(function(){
                         if( $(this).attr("src") ==INITBG){
-                            //$(this).parent().find(".checked").addClass("on");
                             bgBl = false;
                             return false;
                         }
@@ -1067,6 +1073,9 @@ function fn1(obj1){
                  CHANGEBGCOLOR('.BG_CHOOSE');
             },1);
         }else {
+            
+            if(!alertReady) return ;
+            
             CHANGEWZ = null;
 
             $(obj).find(".default_bg_div").off("click");
@@ -1090,14 +1099,12 @@ function fn1(obj1){
                     //图片选择
                     $(obj).find(".default_bg_div").each(function(){
                         if($(this).find("img").attr("src") == INITBG){
-                            //$(this).addClass("on");
                             imgBl = true;
                             return false;
                         }
                     });
                     $(obj).find(".upload_img_box img").each(function(){
                         if( $(this).attr("src") == INITBG){
-                            //$(this).parent().find(".checked").addClass("on");
                             imgBl = false;
                             return false;
                         }
@@ -1108,14 +1115,6 @@ function fn1(obj1){
                     var _this =  $(obj).find(".upload_img_box img").eq( $(obj).find(".upload_img_box img").length -1);
                     _this.parent().find(".checked").addClass("on");
                     CHANGEBG = _this.attr("src");
-                   /* $(WZ).find("img").attr("src",_this.attr("src")) ;
-                    console.log(_this.attr("src"));
-
-                    resetImgFather(WZ);
-                    var data = getImgSize(_this.attr("src"),WZ);
-                    setImgS(data, $(WZ).find("img"));
-                    resetDivSize(data,WZ);
-                    choiceSize(WZ);*/
 
                     //色彩选择
                     $(obj).find(".default_bg_div").on("click",divClick);
@@ -1153,17 +1152,6 @@ function fn1(obj1){
                             $(obj).find(".default_bg_div").removeClass("on");
                             //图片选择
                             CHANGEBG = INITBG;
-                            /*$(WZ).find("img").attr("src",INITBG) ;
-                            if(imgBl){
-                                resetImgOriginal(WZ)
-                                choiceSize(WZ);
-                            }else{
-                                resetImgFather(WZ);
-                                var data = getImgSize(INITBG,WZ);
-                                setImgS(data, $(WZ).find("img"));
-                                resetDivSize(data,WZ);
-                                choiceSize(WZ);
-                            }*/
 
 
 
@@ -1174,13 +1162,6 @@ function fn1(obj1){
                             $(this).find(".checked").addClass("on");
                             //图片选择
                             CHANGEBG = $(this).find("img").attr("src");
-                            /*$(WZ).find("img").attr("src",$(this).find("img").attr("src")) ;
-
-                            resetImgFather(WZ)
-                            var data = getImgSize($(this).find("img").attr("src"),WZ);
-                            setImgS(data, $(WZ).find("img"));
-                            resetDivSize(data,WZ);
-                            choiceSize(WZ);*/
                         }
                     }
 
@@ -1189,28 +1170,12 @@ function fn1(obj1){
                             $(obj).find(".upload_img_box .checked").removeClass("on");
                             $(obj).find(".default_bg_div").removeClass("on");
                             CHANGEBG = INITBG;
-                            /*$(WZ).find("img").attr("src",INITBG) ;
-
-                            if(imgBl){
-                                resetImgOriginal(WZ)
-                                choiceSize(WZ);
-                            }else{
-                                resetImgFather(WZ);
-                                var data = getImgSize(INITBG,WZ);
-                                setImgS(data, $(WZ).find("img"));
-                                resetDivSize(data,WZ);
-                                choiceSize(WZ);
-                            }*/
                         }else{
                             isChange = false;
                             $(obj).find(".upload_img_box .checked").removeClass("on");
                             $(obj).find(".default_bg_div").removeClass("on");
                             $(this).addClass("on");
                             CHANGEBG = $(this).find("img").attr("src");
-                           /* $(WZ).find("img").attr("src",$(this).find("img").attr("src")) ;
-
-                            resetImgOriginal(WZ)
-                            choiceSize(WZ);*/
                         }
                     }
 
@@ -1249,19 +1214,6 @@ function fn1(obj1){
                     $(obj).find(".close").on("click",function(){
                         console.log(BORDER_W,"----",BORDER_C);
                         $(WZ).css("border",parseInt(BORDER_W) + "px solid " + BORDER_C);
-                        /*$(WZ).find("img").attr("src",INITBG) ;
-
-                        if(imgBl){
-                            resetImgOriginal(WZ)
-                            choiceSize(WZ);
-                        }else{
-                            resetImgFather(WZ);
-                            var data = getImgSize(INITBG,WZ);
-                            setImgS(data, $(WZ).find("img"));
-                            resetDivSize(data,WZ);
-                            choiceSize(WZ);
-                        }*/
-
                         $(obj).fadeOut();
 
 
