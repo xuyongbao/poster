@@ -1,43 +1,88 @@
 {
-  "base": {
-    "background": "images/big_bg.jpg",
-    "bgheight":1400,
-    "bgwidth":700
-  },
-  "logo": {
-    "width": 20,
-    "height": 20,
-    "axis_y": "150.00",
-    "axis_x": "150.00"
-  },
-  "title": {
-    "width": 100,
-    "height": 30,
-    "axis_x": "0.00",
-    "axis_y": "0.00",
-    "content": "hi",
-    "font_size": "12",
-    "font_color": "344"
-  },
-  "element1": {
-    "type": "text",
-    "axis_x": "0.00",
-    "axis_y": "20.00",
-    "width": 100,
-    "height": 100,
-    "content": null,
-    "font_size": null,
-    "font_color": null
-
-  },
-  "element2": {
-    "type": "image",
-    "axis_x": "10.00",
-    "axis_y": "200.00",
-    "width": 50,
-    "height": 50,
-    "pic": "images/elemt2.jpg",
-    "border_width": null,
-    "border_color": null
-  }
+    "base" : {
+      "bgheight" : 1039,
+      "background" : "./images/theme_1_bg.jpg",
+      "show_user_nickname" : 1,
+      "bgid" : 145,
+      "basis_day" : "2017-10-27 00:00:00",
+      "show_user_qr" : 1,
+      "show_user_no" : 1,
+      "show_user_headimg" : 1,
+      "show_user_mobile" : 1,
+      "show_weather" : 1,
+      "show_time" : 1,
+      "show_logo" : 1,
+      "bgwidth" : 616,
+      "show_qr" : 1,
+      "show_day" : 1,
+      "day_type" : 1,
+      "watchword" : "激励口号",
+      "is_edit" : 1,
+      "qr_img_url" : "./images/code.jpg"
+    },
+    "element2" : {
+      "id" : 80,
+      "style" : "",
+      "rotate" : 0,
+      "width" : 330,
+      "axis_y" : "450.00",
+      "type" : "image",
+      "pic" : "./images/theme_1_el2.png",
+      "exist" : true,
+      "axis_x" : "300.00",
+      "border" : "",
+      "height" : 520
+    },
+    "userinfo" : {
+      "headimgurl" : "./images/elemt2.jpg",
+      "mobile" : "15296828997",
+      "nickname" : "乱世帝尊",
+      "staffNo" : "8645006566",
+      "qr" : "./images/code.jpg",
+      "name" : "李伟"
+    },
+    "element1" : {
+      "id" : 79,
+      "style" : "",
+      "rotate" : 0,
+      "width" : 350,
+      "axis_y" : "450.00",
+      "type" : "image",
+      "pic" : "./images/theme_1_el1.png",
+      "exist" : true,
+      "axis_x" : "0.00",
+      "border" : "",
+      "height" : 520
+    },
+    "title" : {
+      "height" : 130,
+      "axis_x" : "100.00",
+      "axis_y" : "90.00",
+      "content" : "变迁的是岁月\r\n不变的是童心",
+      "rotate" : 0,
+      "width" : 400,
+      "exist" : true,
+      "font_size" : "20",
+      "font_color" : "255,255,255"
+    },
+    "weather" : {
+      "cityid" : "101020900",
+      "city" : "松江",
+      "temp1" : "4℃",
+      "img1" : "n1.gif",
+      "ptime" : "18:00",
+      "img2" : "d1.gif",
+      "weather" : "多云",
+      "temp2" : "17℃"
+    },
+    "logo" : {
+      "rotate" : 0,
+      "exist" : true,
+      "axis_x" : "10.00",
+      "width" : 100,
+      "height" : 100,
+      "axis_y" : "100.00",
+      "img_url" : "./images/logo.png"
+    }
 }
+

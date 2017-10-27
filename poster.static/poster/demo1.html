@@ -16,12 +16,24 @@
     </style>
 </head>
 <body >
+<!-- 民生二维码 -->
+<div class="minsheng_qr">
+    <img src="" alt="民生银行"/>
+    <p>民生银行</p>
+</div>
+<!-- 当前天气和口号 -->
+<div class="weather">
+    <div class="slogan hidden">激励口号</div>
+    <div class="information">
+        松江市:多云--4℃~17℃
+    </div>
+</div>
+
 <div class="body_bg body">
     <img src="images/theme_1_bg.jpg" alt="">
 </div>
 <div class="theme_el" style="display: none;"><img src="images/theme1.jpg" /></div>
 <div id="title" class="txt-center drag_pos" data-num="1">
-    <!--<span class="title_txt edit_text">从容，是一朵闲适的云</span>-->
     <pre class="title_txt edit_text" id="title_result_txt">从容，是一朵闲适的云</pre>
     <div class="drag_pos_dashed"></div>
     <div class="edit_box">
@@ -38,11 +50,6 @@
     </div>
     <span class="rotate_el" id="rotate_el_n2"></span>
 </div>
-<!--<div class="drag_pos" id="div1">
-    <div class="edit_box1"></div>
-    <span class="rotate_el" id="rotate_el" ></span>
-    <p class="txt">如果有时间，哪怕一丁点儿，我希望所有的安排，都能够提前准备好，这样，可以让自己更从容地面对接下来的事情，保持内心淡定与恬适，去做一个喜欢的自己。</p>
-</div>-->
 
 <div class="drag_pos element_img" id="element_img" data-width="100" data-height="100" data-width2="100" data-height2="100">
     <div class="drag_pos_dashed"></div>
@@ -73,7 +80,7 @@
 <div class="staff_info">
     <span class="vertical_span"></span>
     <div class="leftImgBox ">
-        <img src="images/elemt2.jpg" class="user_head" />
+        <img src="./images/elemt2.jpg" class="user_head" />
     </div>
     <div class="user_info">
         <p class="">姓名：张三</p >
@@ -144,11 +151,6 @@
                 <button class="upload_btn_rel">+上传</button>
             </div>
         </li>
-        <!--<li>
-            <span>边框宽度：<i>0px</i></span><br>
-            <button id="minus1_1">-</button>
-            <button id="minus2_1">+</button>
-        </li>-->
         <li class="close">
             <span>×</span>
         </li>
@@ -308,7 +310,6 @@
         <img src="images/theme1.jpg">
         <p class="result_back"></p>
     </div>
-    <!--<button class="result_back">返回</button>-->
 
     <div class="result_care">长按图片保存分享给您的好友</div>
 </div>

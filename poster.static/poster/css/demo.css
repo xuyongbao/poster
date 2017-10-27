@@ -712,3 +712,35 @@ img{
     border-radius: 5px;
 } */
 
+/* 民生二维码 */
+.minsheng_qr{
+    height:60px;
+    width:60px;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 9999;
+}
+.minsheng_qr img{
+    width:100%;
+}
+.minsheng_qr p {
+    position: absolute;
+    bottom:-20px;
+    left:0;
+    width:100%;
+    line-height: 20px;
+    text-align: center;
+    background: rgba(255,255,255,.7)
+}
+/* 天气和口号 */
+.weather{
+    position: fixed;
+    right:0;
+    top:0;
+    background: rgba(255,255,255,.7);
+    z-index: 9999;
+    text-align: center;
+    line-height: 20px;
+    padding:0 5px;
+}

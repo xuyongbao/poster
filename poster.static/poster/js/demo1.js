@@ -159,8 +159,6 @@ window.onload = function(){
 
     //文字块修改背景和边框
     $('#element_img').on("click",function(){
-        // changeWZ('.WZ_CHOOSE', '#element_img');
-        //$('.WZ_CHOOSE>ul>li').eq(0).hide();
 
         CHANGEWZ = null;
         WZ = $('#element_img');
@@ -238,18 +236,6 @@ window.onload = function(){
                         $(obj).find(".default_bg_div").removeClass("on");
                         //图片选择
                         CHANGEBG = INITBG;
-                       /* $(WZ).find("img").attr("src",INITBG) ;
-
-                        if(imgBl){
-                            resetImgOriginal(WZ);
-                            choiceSize(WZ);
-                        }else{
-                            resetImgFather(WZ);
-                            var data = getImgSize(INITBG,WZ);
-                            setImgS(data, $(WZ).find("img"));
-                            resetDivSize(data,WZ);
-                            choiceSize(WZ);
-                        }*/
 
                     }else{
                         isChange = true;;
@@ -259,16 +245,6 @@ window.onload = function(){
                         //图片选择
 
                         CHANGEBG = $(this).find("img").attr("src");
-                        /*$(WZ).find("img").attr("src",$(this).find("img").attr("src")) ;
-
-
-                        resetImgFather(WZ)
-
-                        var data = getImgSize($(this).find("img").attr("src"),WZ);
-                        setImgS(data, $(WZ).find("img"));
-                        resetDivSize(data,WZ);
-                        choiceSize(WZ);*/
-
                     }
                 }
 
@@ -276,19 +252,8 @@ window.onload = function(){
                     if($(this).hasClass("on")){
                         $(obj).find(".upload_img_box .checked").removeClass("on");
                         $(obj).find(".default_bg_div").removeClass("on");
-                        //$(WZ).find("img").attr("src",INITBG) ;
 
                         CHANGEBG = INITBG;
-                        /*if(imgBl){
-                            resetImgOriginal(WZ)
-                            choiceSize(WZ);
-                        }else{
-                            resetImgFather(WZ);
-                            var data = getImgSize(INITBG,WZ);
-                            setImgS(data, $(WZ).find("img"));
-                            resetDivSize(data,WZ);
-                            choiceSize(WZ);
-                        }*/
 
                     }else{
                         isChange = false;
@@ -296,10 +261,6 @@ window.onload = function(){
                         $(obj).find(".default_bg_div").removeClass("on");
                         $(this).addClass("on");
                         CHANGEBG = $(this).find("img").attr("src");
-                       /* $(WZ).find("img").attr("src",$(this).find("img").attr("src")) ;
-
-                        resetImgOriginal(WZ)
-                        choiceSize(WZ);*/
                     }
                 }
 
@@ -338,20 +299,6 @@ window.onload = function(){
                 $(obj).find(".close").on("click",function(){
                     console.log(BORDER_W,"----",BORDER_C);
                     $(WZ).css("border",parseInt(BORDER_W) + "px "+BORDER_S+" " + BORDER_C);
-                    /*$(WZ).find("img").attr("src",INITBG) ;
-
-                    resetImgFather(WZ)
-
-                    if(imgBl){
-                        resetImgOriginal(WZ)
-                        choiceSize(WZ);
-                    }else{
-                        resetImgFather(WZ);
-                        var data = getImgSize(INITBG,WZ);
-                        setImgS(data, $(WZ).find("img"));
-                        resetDivSize(data,WZ);
-                        choiceSize(WZ);
-                    }*/
 
                     $(obj).fadeOut();
 
@@ -397,9 +344,6 @@ window.onload = function(){
 
 
     $('#element_img2').on("click",function(){
-        // changeWZ('.WZ_CHOOSE', '#element_img');
-        //$('.WZ_CHOOSE>ul>li').eq(0).hide();
-
         CHANGEWZ = null;
         WZ = $('#element_img2');
         var obj = $('.WZ_CHOOSE2');
@@ -476,18 +420,6 @@ window.onload = function(){
                         $(obj).find(".default_bg_div").removeClass("on");
                         //图片选择
                         CHANGEBG = INITBG;
-                       /* $(WZ).find("img").attr("src",INITBG) ;
-
-                        if(imgBl){
-                            resetImgOriginal(WZ)
-                            choiceSize(WZ);
-                        }else{
-                            resetImgFather(WZ);
-                            var data = getImgSize(INITBG,WZ);
-                            setImgS(data, $(WZ).find("img"));
-                            resetDivSize(data,WZ);
-                            choiceSize(WZ);
-                        }*/
 
                     }else{
                         isChange = true;
@@ -496,14 +428,6 @@ window.onload = function(){
                         $(this).find(".checked").addClass("on");
                         //图片选择
                         CHANGEBG = $(this).find("img").attr("src");
-                       /* $(WZ).find("img").attr("src",$(this).find("img").attr("src")) ;
-
-                        resetImgFather(WZ)
-
-                        var data = getImgSize($(this).find("img").attr("src"),WZ);
-                        setImgS(data, $(WZ).find("img"));
-                        resetDivSize(data,WZ);
-                        choiceSize(WZ);*/
                     }
                 }
 
@@ -512,28 +436,12 @@ window.onload = function(){
                         $(obj).find(".upload_img_box .checked").removeClass("on");
                         $(obj).find(".default_bg_div").removeClass("on");
                         CHANGEBG = INITBG;
-                        /*$(WZ).find("img").attr("src",INITBG) ;
-
-                        if(imgBl){
-                            resetImgOriginal(WZ)
-                            choiceSize(WZ);
-                        }else{
-                            resetImgFather(WZ);
-                            var data = getImgSize(INITBG,WZ);
-                            setImgS(data, $(WZ).find("img"));
-                            resetDivSize(data,WZ);
-                            choiceSize(WZ);
-                        }*/
                     }else{
                         isChange = false;
                         $(obj).find(".upload_img_box .checked").removeClass("on");
                         $(obj).find(".default_bg_div").removeClass("on");
                         $(this).addClass("on");
                         CHANGEBG = $(this).find("img").attr("src");
-                        /*$(WZ).find("img").attr("src",$(this).find("img").attr("src")) ;
-
-                        resetImgOriginal(WZ)
-                        choiceSize(WZ);*/
                     }
                 }
 
@@ -572,22 +480,7 @@ window.onload = function(){
                 $(obj).find(".close").on("click",function(){
                     console.log(BORDER_W,"----",BORDER_C);
                     $(WZ).css("border",parseInt(BORDER_W) + "px solid " + BORDER_C);
-                    /*$(WZ).find("img").attr("src",INITBG) ;
-
-                    resetImgFather(WZ)
-
-
-                    if(imgBl){
-                        resetImgOriginal(WZ)
-                        choiceSize(WZ);
-                    }else{
-                        resetImgFather(WZ);
-                        var data = getImgSize(INITBG,WZ);
-                        setImgS(data, $(WZ).find("img"));
-                        resetDivSize(data,WZ);
-                        choiceSize(WZ);
-                    }
-*/
+                    
                     $(obj).fadeOut();
 
 
@@ -632,7 +525,6 @@ window.onload = function(){
     drag(oLogo);
     drag(oElement_img);
     drag(oElement_img2);
-//    drag(scaling_el);
     //初始化编辑框
     initEditBox();
 
@@ -644,13 +536,7 @@ window.onload = function(){
         $('.edit_text').eq(_index).css('fontSize',$(this).text());
         $(this).parents('li').find('i').text($(this).text());
     });
-   /* $('#scaling_el').bind('click',function(){
-        $('#scaling_el').css("zIndex",120);
-        $('.element2Mask').css("zIndex",zIndex++);
-        $('.element2Mask').fadeIn();
-        txt_edit($('#scaling_el'));
-        $('.element2Mask li').find('button').bind('touchstart');
-    });*/
+   
 
     /*底部三个按钮事件*/
     $('.bg_choose_btn').click(function () {
@@ -679,7 +565,6 @@ window.onload = function(){
                 })
            
                 //图片选择
-                //var INITBG = $("body").attr("data-src");
                 $(obj).find(".upload_img_box img").each(function(){
                     if( $(this).attr("src") ==INITBG){
                         $(this).parent().find(".checked").addClass("on");
@@ -738,7 +623,7 @@ window.onload = function(){
 
 
                         resetBgImg();
-                        //setImgS(getImgSize($(this).find("img").attr("src"),"body"),".body img");
+                        
 
                     }
                 }
@@ -1501,8 +1386,10 @@ function upData() {
 
 
     $.get(
-        "test3.json",
+        "test1.json",
         function(data){
+
+            console.log(data);
             var logo = $("#logo");
             var title = $("#title");
             var el_img = $("#element_img");
@@ -1513,7 +1400,6 @@ function upData() {
 
 
             //所有元素显示
-
             logo.removeClass("hidden");
             title.removeClass("hidden");
             el_img.removeClass("hidden");
@@ -1522,6 +1408,86 @@ function upData() {
             title.css("border","none");
             el_img.css("border","none");
             el_img2.css("border","none");
+
+            //员工信息
+            var user = $(".user_info p");
+            var user_img = $(".leftImgBox");
+            var user_qr = $(".code_div");
+            var user_name = user.eq(0);
+            var user_nickname = user.eq(1);
+            var user_sraffNo = user.eq(2);
+            var user_mobile = user.eq(3);
+
+            if(data.base.show_user_headimg == 1){
+                user_img.removeClass("hidden");
+                user_img.find("img").attr("src",data.userinfo.headimgurl);
+            }else{
+                user_img.addClass("hidden");
+            }
+            if(data.base.show_user_qr == 1){
+                user_qr.removeClass("hidden");
+                user_qr.find("img").attr("src",data.userinfo.qr);
+            }else{
+                user_qr.addClass("hidden");
+            }
+
+            if(data.userinfo.name != null){
+                user_name.removeClass("hidden");
+                user_name.text("姓名："+data.userinfo.name);
+            }else{
+                user_name.addClass("hidden");
+            }
+
+            if(data.base.show_user_nickname == 1){
+                user_nickname.removeClass("hidden");
+                user_nickname.text("昵称："+data.userinfo.nickname);
+            }else{
+                user_nickname.addClass("hidden");
+            }
+
+            if(data.base.show_user_no == 1){
+                user_sraffNo.removeClass("hidden");
+                user_sraffNo.text("工号："+data.userinfo.staffNo);
+            }else{
+                user_sraffNo.addClass("hidden");
+            }
+
+            if(data.base.show_user_mobile == 1){
+                user_mobile.removeClass("hidden");
+                user_mobile.text("电话："+data.userinfo.mobile);
+            }else{
+                user_mobile.addClass("hidden");
+            }
+
+            //民生logo
+            var minLogo = $(".minsheng_qr");
+            if(data.base.show_qr == 1){
+                minLogo.removeClass("hidden");
+                minLogo.find("img").attr("src",data.base.qr_img_url);
+            }
+
+            //天气和口号
+            var weather = $(".information");
+            var slogan = $(".slogan");
+            if(data.base.show_weather == 1){
+                weather.removeClass("hidden");
+                weather.text(data.weather.city+":"+data.weather.weather+"--"+data.weather.temp1+"~"+data.weather.temp2);
+            }else{
+                weather.addClass("hidden");
+            }
+
+            if(data.base.watchword != null){
+                slogan.removeClass("hidden");
+                slogan.text(data.base.watchword);
+            }else{
+                slogan.addClass("hidden");
+            }
+
+
+
+
+
+
 
             /*title*/
             var title11  = constrainFn(bgW,bgH,{
@@ -1549,7 +1515,6 @@ function upData() {
             }
             $(title).css({
                 lineHeight:parseInt($("#title_result_txt").css("fontSize")) + 10 + "px",
-                //height:$("#title_result_txt").outerHeight() + "px"
             });
             $(title).find(".edit_box").css({
                 height:$("#title_result_txt").outerHeight() + "px"
@@ -1557,19 +1522,6 @@ function upData() {
             title.attr("data-width",title11.w);
             title.attr("data-height",title11.h);
             /*logo*/
-            //logo 按照原图大小显示
-            /*var logo11  = constrainFn(bgW,bgH,{
-                l:data.logo.axis_x,
-                t:data.logo.axis_y,
-                w:data.logo.width,
-                h:data.logo.height
-            });
-            logo.css({
-                top:logo11.t+'px',
-                width:logo11.w+'px',
-                left:logo11.l+'px',
-                height:logo11.h+'px'
-            });*/
             logo.css({
                 top:data.logo.axis_y+'px',
                 width:data.logo.width+'px',
@@ -1644,10 +1596,6 @@ function upData() {
             $(".body").css("background","none");
             $(".body img").attr("src",data.base.background);
 
-
-
-
-
             //初始化编辑框样式
             var arr = [
                 {w:title11.w,h:title11.h},
@@ -1663,7 +1611,6 @@ function upData() {
                     boxSizing: "border-box",
                     transform:"none"
                 });
-                // console.log(arr[index].w,"-----",arr[index].h,"---",index,"---",arr)
                 $(this).css({
                     width:arr[index].w + "px",
                     height:arr[index].h + "px"
@@ -1683,7 +1630,6 @@ function upData() {
                     boxSizing: "border-box",
                     transform:"none"
                 });
-                // console.log(arr[index].w,"-----",arr[index].h,"---",index,"---",arr)
                 $(this).css({
                     width:arr[index].w + "px",
                     height:arr[index].h + "px"
@@ -1697,10 +1643,8 @@ function upData() {
 
         }
     );
-
-
-//        $("body").css("background",arr[rnd(0,6)]);
 }
+
 //点击body关闭颜色选择框
 function clickCloseColor(){
     $(".colpick_full").hide();
